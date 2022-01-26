@@ -21,11 +21,14 @@
     {
       "name": "Pavan Kumar Sunkara",
       "email": "pavan.sss1991@gmail.com"
-    }
+    },
+    {
+      "name": "Wilson Foo Yu Kang",
+      "email": "wilson.foo@customautosys.com"
   ],
   "dependencies": {
     "recursive-readdir": "^2.1.0",
-    "virtual-module-webpack-plugin": "^0.4.0"
+    "webpack-virtual-modules": "^0.4.3"
   },
   "devDependencies": {
     "eslint": "^7.2.0",
