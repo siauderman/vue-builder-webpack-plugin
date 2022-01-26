@@ -1,6 +1,6 @@
 const recursiveRead = require('recursive-readdir');
 const path = require('path');
-const VirtualModulePlugin = require('virtual-module-webpack-plugin');
+const VirtualModulePlugin = require('webpack-virtual-modules');
 
 let directory = __dirname;
 let folder = false;
