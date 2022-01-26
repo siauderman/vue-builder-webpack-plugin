@@ -25,6 +25,7 @@
     {
       "name": "Wilson Foo Yu Kang",
       "email": "wilson.foo@customautosys.com"
+    }
   ],
   "dependencies": {
     "recursive-readdir": "^2.1.0",
