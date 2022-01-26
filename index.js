@@ -170,10 +170,10 @@ const buildVues = (callback, compiler) => {
 };
 
 VueBuilderPlugin.prototype.apply = (compiler) => {
-  compiler.hooks.run((compilation, callback) => buildVues(callback, compiler));
-  compiler.hooks.watchRun((compilation, callback) => buildVues(callback, compiler));
+  compiler.hooks.run.tap((compilation, callback) => buildVues(callback, compiler));
+  compiler.hooks.watchRun.tap((compilation, callback) => buildVues(callback, compiler));
 
-  compiler.hooks.afterCompile((compilation, callback) => {
+  compiler.hooks.afterCompile.tap((compilation, callback) => {
     createdFiles.forEach((file) => {
       compilation.fileDependencies.delete(file);
     });
